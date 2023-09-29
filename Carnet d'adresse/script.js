@@ -55,16 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
         editForm.addEventListener('submit', function(event) {
             event.preventDefault();
     
-            // Mettez à jour les données du contact
             contact.name = document.getElementById('edit-name').value;
             contact.surname = document.getElementById('edit-surname').value;
             contact.number = document.getElementById('edit-number').value;
     
-            // Mettez à jour l'affichage du contact
             const contactSpan = document.querySelector(`[data-name="${contact.name}"][data-surname="${contact.surname}"][data-number="${contact.number}"]`);
             contactSpan.textContent = `${contact.name} - ${contact.number}`;
-    
-            // Enlevez le formulaire de modification
+
             editForm.remove();
             
             saveContacts();
