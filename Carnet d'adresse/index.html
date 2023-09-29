@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet de contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="titre">
+        <h1>Carnet d'adresses</h1>
+    </div>
+    <div id="contacts">
+        <h2>Mes contacts</h2>
+        <ul id="contact-list">
+            <p>Nom - Prénom - Numéro de téléphone</p>
+            <!-- La liste des contacts sera générée ici -->
+        </ul>
+        <button class="clear"><i class="material-icons">delete_forever</i></button>
+    </div>
+
+    <form id="add-contact-form">
+        <h2>Ajouter un contact</h2>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" required>
+        <label for="surname">Prénom :</label>
+        <input type="text" id="surname" required>
+        <label for="phone-number">Numéro de téléphone :</label>
+        <input type="phone-number" id="number" required>
+        <button type="submit"><i class="material-icons">add</i></button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
